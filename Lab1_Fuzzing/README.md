@@ -74,10 +74,13 @@ Radamsa can also handle various types of files. Next, you have to generate a bun
 **B)** Create a *.txt* file that contains only the text ```12 EF``` and nothing more. Use Radamsa to generate 100 fuzzed samples of the file that are named ```fuzz1.txt```, ```fuzz2.txt```, ```fuzz3.txt```... etc. You should create a separate folder for the samples.
 
 **Provide the content of 2 different samples that radamsa created**
+
 12 EF12 EF
+
 ---9139959593394 EF
 
 **Command line used to create the samples**
+
 radamsa fuzz.txt -o fuzz_folder/fuzz-%n.txt -n 100
 
 ---
