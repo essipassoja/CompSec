@@ -172,9 +172,15 @@ The GET request is sent to http://localhost:3000/rest/products/search?q=. Try di
 
 __What did you use as the search argument to cause an error?__
 
+'apple'
+
 __Why did it cause an error?__
  
+The input content had special characters in it, which are not escaped by the code, thus causing an error.
+ 
 __Paste here the command that the SQL server attempts to execute and replace the part(s) taken from the search field with the text "SEARCHRESULT".__ 
+
+SELECT * FROM Products WHERE ((name LIKE '%'apple'%' OR description LIKE '%'apple'%') AND deletedAt IS NULL) ORDER BY name
 
 ---
 
