@@ -180,7 +180,7 @@ The input content had special characters in it, which are not escaped by the cod
  
 __Paste here the command that the SQL server attempts to execute and replace the part(s) taken from the search field with the text "SEARCHRESULT".__ 
 
-SELECT * FROM Products WHERE ((name LIKE '%'apple'%' OR description LIKE '%'apple'%') AND deletedAt IS NULL) ORDER BY name
+SELECT * FROM Products WHERE ((name LIKE "SEARCHRESULT" OR description LIKE "SEARCHRESULT") AND deletedAt IS NULL) ORDER BY name
 
 ---
 
