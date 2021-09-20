@@ -195,8 +195,11 @@ Examine the SQL query that the server returned in the last part. How does this q
 
 __How are the items "deleted"?__
 
+Timestamp of deletion is set to DeletedAt
+
 __How did you make the server return all the items?__
  
+
 
 __Explain shortly the logic behind your attack. Why does it work?__
 
