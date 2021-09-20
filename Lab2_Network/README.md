@@ -1,6 +1,8 @@
 Computer Security Lab 2: Networks and web security
 ====
 
+NOTICE: These tasks were made together with Miika Sikala.
+
 ## Preliminary tasks
 
 * Read the sections ```Background``` and ```Theory``` from this document and [```SQL.md```](misc/SQL.md)
@@ -384,6 +386,8 @@ You can use any tools you find online. If you want to, you can code your own mut
 * Wordlist
 * Any code you created.
 * Detailed description of how you created the wordlist and how you did the brute force attack.
+
+The word list was created with the python file search.py, where all possible combinations of upper or lower cases, or possibly numbers are found for the word 'vaapukkamehu'. Then all possible letter combinations are sent to the server one by one, until the correct answer is found.
 
 <details>
 <summary>Hint</summary>
