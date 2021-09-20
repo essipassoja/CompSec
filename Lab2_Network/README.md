@@ -240,6 +240,9 @@ Firefox's developer tools has a debugger that shows sources. Try to find the pat
 
 __How did you find the path?__
 
+Search word in debugger tool: path
+It was rather fast to come across "score-board" --> http://localhost:3000/#/score-board
+
 ---
 
 **Administration panel**
