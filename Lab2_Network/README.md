@@ -256,6 +256,8 @@ Check task 'Scoreboard'. You have to be logged in as the admin to access the pag
 
 __What is the administration panel's URL?__
 
+http://localhost:3000/#/administration
+
 ---
 ### XSS attacks
 
