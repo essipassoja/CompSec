@@ -273,6 +273,10 @@ Attack on the "Order ID" is an [reflected XSS attack](https://www.owasp.org/inde
 
 __What is the difference between these two types of attacks?__
 
+Reflected attack goes through server. Piece of java script is sent to the server, and the server reflects the attack to the victim.
+DOM works without changing the site URL, but we can still change the page content. This way the attack is injected directly to the victim's browser. 
+
+
 ---
 
 **Persistent XSS**
@@ -301,6 +305,8 @@ We can find out the type of packet we need in the following way:
 After this, log in as the administrator and go to the administration panel. You should be welcomed by an alert popup and the administration panel should have a weird-looking user entry.
 
 __How can you protect your applications against XSS attacks?__
+
+with server side validation and input validation.
 
 ---
 
