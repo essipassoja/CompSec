@@ -215,10 +215,16 @@ Inject some SQL into the login fields, [bypass the login](https://www.acunetix.c
 
 __What command(s) did you use?__
 
+POST http://localhost:3000/rest/user/login
+Request body: {"email":"' OR id=1/*","password":"salasana"}
+
 __Why it is working/what is happening?__
+
+This works similarly to the previous one, first we cause an error to the login field. Then we use the rest of the request body to find a user with id=1, and skip the password check by commenting out the rest of the login check.
 
 __What user did you login as?__
 
+admin@juice-sh.op
 
 ---
 ### Inspecting the client resources
