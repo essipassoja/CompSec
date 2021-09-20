@@ -199,11 +199,11 @@ Timestamp of deletion is set to DeletedAt
 
 __How did you make the server return all the items?__
  
-http://localhost:3000/rest/products/search?q=%27));/*
+http://localhost:3000/rest/products/search?q=%27))//
 
 __Explain shortly the logic behind your attack. Why does it work?__
 
-First an error is caused, and then some of the sql command is commented away to prevent it from counting out the deleted ones.
+First an error is caused, and then some of the sql command is commented away to prevent it from counting out the deleted ones. Before commenting it is important to close the open brackets.
 
 ---
 
